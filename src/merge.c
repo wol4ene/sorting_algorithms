@@ -58,6 +58,8 @@ void _merge(int arr[], int l, int m, int r)
     for (k = 0; k < tmpSize; k++) {
         arr[i++] = tmp[k];
     }
+    /* now free the tmp array */
+    free(tmp);
 }
 
 /**
